@@ -1,0 +1,45 @@
+auction_website/
+│
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py                 # Entry point for FastAPI application
+│   │   ├── models.py               # Database models (MongoDB schemas)
+│   │   ├── routes/                  # API route definitions
+│   │   │   ├── __init__.py
+│   │   │   ├── bid_routes.py        # Bid-related API endpoints
+│   │   │   └── auction_routes.py     # Auction-related API endpoints
+│   │   ├── services/                # Business logic and service functions
+│   │   │   ├── __init__.py
+│   │   │   ├── bid_service.py       # Logic for handling bids
+│   │   │   └── auction_service.py   # Logic for auction operations
+│   │   ├── websockets/              # WebSocket connection handlers
+│   │   │   ├── __init__.py
+│   │   │   └── bid_websocket.py     # WebSocket for real-time bid updates
+│   │   ├── database.py              # Database connection and setup (MongoDB)
+│   │   └── config.py                # Configuration settings (e.g., Redis, DB)
+│   ├── requirements.txt             # Required Python packages
+│   └── Dockerfile                   # Dockerfile for containerizing the app
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html               # Main HTML file for React app
+│   ├── src/
+│   │   ├── index.js                 # Entry point for React application
+│   │   ├── App.js                   # Main app component
+│   │   ├── components/              # Reusable React components
+│   │   │   ├── __init__.js
+│   │   │   ├── AuctionPage.js       # Component for auction page
+│   │   │   └── BidInput.js          # Component for inputting bids
+│   │   ├── contexts/                # Context API for state management
+│   │   │   ├── __init__.js
+│   │   │   └── AuctionContext.js     # Context for managing auction state
+│   │   ├── styles/                  # CSS styles
+│   │   │   └── App.css              # Styles for the app
+│   │   └── utils/                   # Utility functions
+│   │       ├── __init__.py
+│   │       └── api.js               # API call functions
+│   ├── package.json                  # React project dependencies
+│   └── Dockerfile                    # Dockerfile for containerizing the frontend
+│
+└── README.md                        # Project documentation and setup instructions
