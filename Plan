@@ -1,0 +1,55 @@
+This is a FARM (FastAPI, React, MongoDB) application for an e-commerce auction website. The platform will allow users to participate in auctions, purchase fixed-price items, manage their bids, and handle account details. The app will follow a user-friendly design with clear navigation across multiple sections.
+
+Application Flow and Features:
+User Authentication:
+Login/Signup Page:
+New users can sign up, and existing users can log in using credentials.
+Secure authentication system with password protection.
+Home Screen:
+After logging in, the user is directed to the home screen.
+
+The home screen will feature a navbar and a content list.
+
+Navbar sections:
+
+Auction
+Buy Now (Fixed Buy)
+Cart
+Ongoing Bids
+Account
+About
+Content List on the home screen:
+
+Featured Auctions: Display a few handpicked auction items (e.g., trending or high-value items) with quick access to bid on them.
+Latest Buy Now Deals: Showcase the most recent items available for purchase at fixed prices.
+Top Bids: List the most competitive auctions where users are actively bidding.
+Recommended for You: Use an algorithm to suggest items based on the user's past bids and purchases.
+Upcoming Auctions: Display items whose auctions are about to start soon (with countdown timers).
+Recently Viewed Items: A section for users to quickly access items they previously checked out.
+Navbar Sections:
+Auction Page:
+
+Lists auction items with details like:
+Price
+Current highest bid
+Remaining auction time
+Users can place bids on available items.
+Buy Now Page (Fixed Buy):
+
+Displays items available for purchase at a fixed price.
+Users can add items directly to their cart for immediate purchase.
+Cart:
+
+Items added for purchase or bid are displayed here.
+Users can remove items or proceed to checkout for final payment.
+Ongoing Bids:
+
+Shows the user's current winning bids and recently overtaken bids.
+Provides notifications for bid status updates (e.g., if someone outbids them).
+Account:
+
+Users can update account details such as email, password, and other profile information.
+About:
+
+Information about the development team and company.
+A brief description of the platform’s vision and services.
